@@ -13,33 +13,33 @@
       <input type="text" id="result" disabled>
       <table>
         <tr>
-          <td><button class="ac">AC</button></td>
-          <td><button class="de">DE</button></td>
-          <td><button>.</button></td>
-          <td><button>/</button></td>
+          <td><button class="ac" onclick="clearfield()">AC</button></td>
+          <td><button class="de" onclick="del()">DE</button></td>
+          <td><button onclick="appendOperator('.')">.</button></td>
+          <td><button onclick="appendOperator('/')">/</button></td>
         </tr>
         <tr>
-          <td><button>7</button></td>
-          <td><button>8</button></td>
-          <td><button>9</button></td>
-          <td><button>*</button></td>
+          <td><button onclick="appendOperator('7')">7</button></td>
+          <td><button onclick="appendOperator('8')">8</button></td>
+          <td><button onclick="appendOperator('9')">9</button></td>
+          <td><button onclick="appendOperator('*')">*</button></td>
         </tr>
         <tr>
-          <td><button>4</button></td>
-          <td><button>5</button></td>
-          <td><button>6</button></td>
-          <td><button>-</button></td>
+          <td><button onclick="appendOperator('4')">4</button></td>
+          <td><button onclick="appendOperator('5')">5</button></td>
+          <td><button onclick="appendOperator('6')">6</button></td>
+          <td><button onclick="appendOperator('-')">-</button></td>
         </tr>
         <tr>
-          <td><button>1</button></td>
-          <td><button>2</button></td>
-          <td><button>3</button></td>
-          <td><button>+</button></td>
+          <td><button onclick="appendOperator('1')">1</button></td>
+          <td><button onclick="appendOperator('2')">2</button></td>
+          <td><button onclick="appendOperator('3')">3</button></td>
+          <td><button onclick="appendOperator('+')">+</button></td>
         </tr>
         <tr>
-          <td><button>0</button></td>
-          <td><button>00</button></td>
-          <td><button>=</button></td>
+          <td><button onclick="appendOperator('0')">0</button></td>
+          <td><button onclick="appendOperator('00')">00</button></td>
+          <td><button onclick="calculate()">=</button></td>
         </tr>
       </table>
     </div>
